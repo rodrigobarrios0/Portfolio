@@ -6,5 +6,108 @@
 
 body{
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to bottom, #050709, #111221, #2a142d, #480d27, #5c1111);
+    background: linear-gradient(to bottom, #050709, #111221, #2a142d, #480d27, #5c1111);
 }
+
+/*Generales*/
+h1, h2, h3{
+    color: #ffffff;
+}
+.cards{
+    background-color: #1e1e2f;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+/*-------------------------*/
+/* Navegación */
+#menuBtn{
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.containerPerfil{
+    max-width: 1000px;
+    min-height: 400px;
+    margin: 0 auto;
+    padding: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.header{
+    background-color: #111221;
+    padding: 16px;
+    margin: 0px;
+    background:linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border-end-end-radius:12px;
+    border:1px solid rgba(155, 8, 8, 0.03);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: rgb(59, 1, 82);
+    font-size: 32px;
+    font-weight: bold;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+/*-------------------------*/
+/*Perfil*/
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.nombre {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    max-width: 600px;
+}
+
+.perfil img {
+    display: inline-block;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.perfil p {
+    max-width: 700px;
+    
+}
+/*-------------------------*/
+
+
+ 

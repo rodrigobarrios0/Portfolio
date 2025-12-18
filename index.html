@@ -1,91 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigo Barrios - Portfolio</title>
+    <title>Rodrigo Gustavo Barrios | Front-End Developer Junior</title>
+    <meta name="description" content="Portfolio de Rodrigo Gustavo Barrios, desarrollador Front-End Junior con conocimientos en HTML, CSS, JavaScript y Bootstrap.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Rodrigo Gustavo Barrios</h1>
-            <nav>
-                <ul>
-                    <li href="proyectos">Proyectos</li>
-                    <li href="skills">Habilidades</li>
-                    <li href="sobreMi">About Me</li>
-                    <li href="contacto">Contacto</li>
-                </ul>
-            </nav>
-            <button>☰</button>
+
+<header class="header">
+    <nav class="nav">
+        <button id="menuBtn" aria-label="Abrir menú">☰</button>
+        <h1 class="logo">Rodrigo Barrios</h1>
+        <ul class="nav-links">
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#sobreMi">Sobre mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- PERFIL -->
+    <section class="containerPerfil">
+        <div class="perfil">
+            <img src="./assets/imagenes/imgperfil.jpeg" alt="Foto de perfil de Rodrigo Gustavo Barrios">
+
+            <div class="nombre">
+                <h2>Rodrigo Gustavo Barrios</h2>
+                <h3>Desarrollador Web | Técnico Electrónico</h3>
+                <p>
+                    Técnico electrónico y desarrollador web en formación, con conocimientos en HTML,
+                    CSS, JavaScript y Bootstrap. Busco mi primer rol como Front-End Junior para seguir
+                    aprendiendo y aportar soluciones de calidad.
+                </p>
+            </div>
+
+            <div class="contactarme">
+                <a href="#proyectos">Ver proyectos</a>
+                <a href="#contacto">Contactarme</a>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section>
-            <div>
-                <img src="" alt="Foto de Perfil">
-                <h2>Front-End Developer en formación</h2>
-                <p>Maqueto y desarrollo interfaces limpias y responsivas con conocimiento en HTML, CSS, Javascript y Bootstrap. Busco mi primer rol como Junior Front-End</p>
-                <div>
-                    <a href="#proyectos">Ver Proyectos</a>
-                    <a href="#contacto">Contactarme</a>
-                </div>
-                <div>
-                    <h3>Contacto</h3>
-                    <p>Rodrigo Gustavo Barrios</p>
-                    <p>☎️ (+54) 11 3949-6170</p>
-                    <p>✉️<a href="mailto:rodrigogbarrios05@gmail.com">rodrigogbarrios05@gmail.com</a></p>
-                    <p><a href="http://linkedin.com/in/rodrigo-barrios32/" target="_blank">LinkedIn</a></p>
-                </div>
-            </div>
-        </section>
+    <!-- HABILIDADES -->
+    <section id="Habilidades" class="container">
+        <h3>Habilidades</h3>
 
-        <section id="skills">
-            <h3>Habilidades</h3>
-            <ul>
-                <li>HTML5 / CSS3 / SASS</li>
-                <li>JavaScript (Vanilla)</li>
-                <li>Responsive design / Cross-browsing</li>
-                <li>Bootstrap / Git / Figma (básico)</li>
-            </ul>
-        </section>
+        <ul class="skills">
+            <li><strong>Desarrollo Web:</strong> HTML5, CSS3, SASS, Bootstrap, JavaScript, diseño responsivo</li>
+            <li><strong>Soporte Técnico / Electrónica:</strong> armado y mantenimiento de PC, reparación de circuitos, electricidad básica</li>
+            <li><strong>Diseño Gráfico:</strong> Photoshop, Lightroom, Premiere, tableta gráfica</li>
+            <li><strong>Herramientas:</strong> Git, Paquete Office, entorno Windows</li>
+        </ul>
+    </section>
 
-        <section id="proyectos">
-            <h3>Proyectos</h3>
-            <div class="cards">
-                <article class="cards">
-                    <img src="" alt="Proyecto 1">
-                    <h4>Proyecto 1</h4>
-                    <p>Descripción breve del proyecto 1.</p>
-                    <a href="#" target="_blank">Ver Proyecto</a>
-                </article class="cards">
-                <article>
-                    <img src="" alt="Proyecto 2">
-                    <h4>Proyecto 2</h4>
-                    <p>Descripción breve del proyecto 2.</p>
-                    <a href="#" target="_blank">Ver Proyecto</a>
-                </article>
-                <!-- Más proyectos pueden ser añadidos aquí -->
-            </div>
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="container">
+        <h3>Proyectos</h3>
 
-        <section id="sobreMi">
-            <h3>Sobre Mí</h3>
-            <p>Soy técnico electrónico y desarrollador web en formación. Me gusta aprender nuevas tecnologías, resolver problemas y trabajar en equipo. Actualmente cursando React en CoderHouse. Busco un puesto donde pueda crecer como Front-End.</p>
-        </section>
+        <div class="cards">
+            <article class="card">
+                <img src="" alt="Proyecto carrito de compras">
+                <h4>Carrito de compras</h4>
+                <p>
+                    Aplicación en JavaScript que permite agregar productos a un carrito,
+                    guardar datos en localStorage y confirmar la compra.
+                </p>
+                <a href="#" target="_blank">Ver proyecto</a>
+                <a href="#" target="_blank">Ver código</a>
+            </article>
 
-        <section id="contacto">
-            <h3>Contacto</h3>
-            <p>Si queres contactarme o que te muestre algún proyecto escribime: <a href="mailto:rodrigogbarrios05@gmail.com">rodrigogbarrios05@gmail.com</a></p>
-            <p>📞 (+54) 11 3949-6170</p>
-        </section>
-    </main>
+            <article class="card">
+                <img src="" alt="Proyecto">
+                <h4>Ecommerce</h4>
+                <p>
+                    Maquetado de Ecommerce.
+                </p>
+                <a href="#" target="_blank">Ver proyecto</a>
+                <a href="#" target="_blank">Ver código</a>
+            </article>
+        </div>
+    </section>
 
-    <footer>
-        <p>© Rodrigo Gustavo Barrios — Front-End Developer (Junior)</p>
-    </footer>
-    
-    <script src="script.js" defer></script>
+    <!-- SOBRE MI -->
+    <section id="sobreMi" class="container">
+        <h3>Sobre mí</h3>
+        <p>
+            Me considero una persona responsable, con iniciativa y pasión por la tecnología.
+            Disfruto trabajar en equipo, resolver problemas técnicos y aprender continuamente.
+            Actualmente curso React en CoderHouse.
+        </p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="container">
+        <h3>Contacto</h3>
+        <p>Email: <a href="mailto:rodrigogbarrios05@gmail.com">rodrigogbarrios05@gmail.com</a></p>
+        <p>Teléfono: (+54) 11 3949-6170</p>
+        <p>
+            LinkedIn:
+            <a href="https://linkedin.com/in/rodrigo-barrios32" target="_blank">
+                linkedin.com/in/rodrigo-barrios32
+            </a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Rodrigo Gustavo Barrios — Front-End Developer Junior</p>
+</footer>
+
+<script src="script.js" defer></script>
 </body>
 </html>
