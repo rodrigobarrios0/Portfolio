@@ -88,10 +88,17 @@ nav a:hover {
 /*Perfil*/
 .perfil {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
     flex-wrap: wrap;
-    color: #ffffff;
-    padding: 40px 20px;
+}
+
+.perfil img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.1);
 }
 
 .nombre {
@@ -101,14 +108,6 @@ nav a:hover {
     max-width: 600px;
 }
 
-.perfil img {
-    display: inline-block;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
 .perfil p {
     max-width: 700px;
     
