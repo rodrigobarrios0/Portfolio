@@ -16,7 +16,7 @@ h1, h2, h3{
     color: #ffffff;
     margin-bottom: 16px;
 }
-.cards{
+/* .cards{
     background-color: #1e1e2f;
     border-radius: 8px;
     padding: 16px;
@@ -26,7 +26,7 @@ h1, h2, h3{
     color: #ffffff;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-}
+} */
 
 .container,
 .containerPerfil{
@@ -136,8 +136,38 @@ max-width: 600px;
     transform: translateY(-6px);
     box-shadow: 0 14px 30px rgba(0,0,0 0.6);
 }
-/*-------------------------*/
-/*-------------------------*/
-/*-------------------------*/
 
- 
+.card h4{
+    margin-bottom: 12px;
+}
+
+.card p{
+    font-size: 14px;
+    opacity: 0.9;
+    margin-bottom:16px;
+}
+
+.card a{
+    display: inline-block;
+    margin-right: 10px;
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: 500;
+}
+/*-------------------------*/
+/* botones y links */
+.btns a{
+    display: inline-block;
+    margin-right: 12px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #ff6b6b;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btns a:hover{
+    background: #ff4c4c;
+}
+/*-------------------------*/
