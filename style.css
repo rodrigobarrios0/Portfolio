@@ -102,17 +102,42 @@ nav a:hover {
 }
 
 .nombre {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-    max-width: 600px;
+max-width: 600px;
+}
+
+.nombre h2 {
+    font-size: 28px;
+}
+.nombre h3{
+    font-weight:400px;
+    opacity: 0.85;
 }
 
 .perfil p {
-    max-width: 700px;
-    
+    margin-top: 16px;
 }
 /*-------------------------*/
+/*Proyectos*/
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 25px;
+}
 
+.card{
+    background: #1e1e2f;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition:transform 0.3s, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0 0.6);
+}
+/*-------------------------*/
+/*-------------------------*/
+/*-------------------------*/
 
  
