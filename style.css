@@ -258,28 +258,32 @@ footer {
 Responsive
 ========================== */
 @media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        gap: 15px;
+
+    #menuBtn {
+        display: block;
     }
 
     .nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background: var(--bg-main-medium);
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        gap: 16px;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+        /*Oculto*/
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(0px);
+        transition: all 0.3s ease;
     }
 
-    .perfil {
-        text-align: center;
-        justify-content: center;
-    }
-
-    .perfil img {
-        width: 150px;
-        height: 150px;
-    }
-
-    #menuBtn {
-        display: inline-block;
+    .nav ul.active{
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
     }
 }
