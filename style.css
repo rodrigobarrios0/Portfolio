@@ -203,6 +203,12 @@ Proyectos / Cards
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
 .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.6);
